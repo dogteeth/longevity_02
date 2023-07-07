@@ -483,6 +483,7 @@ section:nth-child(7) {
 }
 
 .productSet {
+  width: 100%;
   border: solid 3px white;
   border-radius: 2rem;
   padding-bottom: 1rem;
@@ -518,7 +519,6 @@ section:nth-child(7) {
 
 .productText p {
   font-size: 1.2rem;
-
   position: relative;
   background-color: grey;
   padding: 0.8rem 1.5rem 0.8rem 1.5rem;
@@ -545,14 +545,18 @@ section:nth-child(7) {
 
 .productModule img {
   display: block;
-  /* width: 30%wh; */
+  width: 100%;
   max-width: 500px;
-  max-height: 50vh;
-  object-fit: cover;
+  max-height: 500px;
+  object-fit: contain;
   margin: auto;
   padding: 2rem;
   z-index: 2;
 }
+.productModule .wineBottleImg img {
+  aspect-ratio: 3/4;
+}
+
 .productModule img:hover {
   filter: drop-shadow(0px 10px 10px rgb(114, 114, 159));
 }
